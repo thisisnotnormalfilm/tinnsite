@@ -61,6 +61,7 @@ h5,h2{
 
 }
 
+
 #header .logo {
 
     align-self: top;
@@ -256,7 +257,7 @@ section>div, footer>div, header>div{
   padding: 6rem 0;
   overflow: hidden;
   width: 80%;
-
+  
 }
 
 .callout{
@@ -288,3 +289,16 @@ footer {
   display: none;
   padding: 15px 20px;
 }
+
+
+
+@media (max-width: 900px){
+  .text-vertical-center h3, h1 {
+    font-size: 3rem;
+    max-width: 100%;
+    padding: 2rem;
+  }
+  section>div, footer>div, header>div{
+    width: 100%;
+    padding: 4rem 0;
+  }
