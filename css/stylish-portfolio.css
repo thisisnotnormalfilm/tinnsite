@@ -22,6 +22,9 @@
   font-family: 'Conduit';
   src:  url('ConduitITCStd-Medium.woff') format('woff');
 }
+@-ms-viewport{
+  width: device-width;
+}
 
 html, body {
   width: 100%;
