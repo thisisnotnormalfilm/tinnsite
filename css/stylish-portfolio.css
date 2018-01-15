@@ -42,12 +42,15 @@ body {
   box-sizing: border-box;
   color:white;
   text-align: center;
+  background-color: black;
 }
 
 
 @media (max-width: 900px){
-  background-size: 100% auto;
-  background-position:0 0;
+  body {
+    background-size: 100% auto;
+    background-position: 0 0;
+  }
   }
 
 h5,h2{
@@ -71,7 +74,7 @@ h5 span,h2 span{
   font-weight: 700;
   text-transform: uppercase;
   font-size: 6rem;
-  max-width: 80%;
+  max-width: 1000px;
   margin: auto;
   line-height: 1.75;
 
@@ -315,11 +318,11 @@ footer {
 
 
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
   .text-vertical-center h3, h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     max-width: 100%;
-    padding: 2rem;
+    padding: 1rem;
   }
   section>div, footer>div, header>div{
     width: 100%;
