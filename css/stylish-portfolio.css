@@ -277,7 +277,6 @@ section, footer, header {
 
 section>div, footer>div, header>div{
   display: inline-block;
-  background-color: rgba(0,0,0,0.1);
   padding: 6rem 0;
   overflow: hidden;
   width: 80%;
@@ -285,7 +284,7 @@ section>div, footer>div, header>div{
 }
 
 .callout{
-  height: 24rem;
+
 }
 #main{
   height: 100vh;
