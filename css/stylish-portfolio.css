@@ -73,7 +73,7 @@ h5 span,h2 span{
   font-family: 'Didot';
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 5rem;
   max-width: 1000px;
   margin: auto;
   line-height: 1.75;
@@ -290,7 +290,8 @@ section>div, footer>div, header>div{
 
 }
 #main{
-  height: 100vh;
+  height: 50vh;
+  margin-top: 50vh;
 }
 footer{
   height: 10rem;
@@ -320,7 +321,7 @@ footer {
 
 @media (max-width: 1000px){
   .text-vertical-center h3, h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     max-width: 100%;
     padding: 1rem;
   }

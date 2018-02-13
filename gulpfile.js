@@ -30,8 +30,16 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('vendor/font-awesome'))
 })
 
-// Default task
-gulp.task('default', ['copy']);
+
+
+// default task is to run task with browserSync
+gulp.task('default', ['browserSync'], function() {
+  // Reloads the browser whenever HTML or CSS files change
+  gulp.watch('css/*.css', browserSync.reload);
+  gulp.watch('*.html', browserSync.reload);
+});
+
+gulp.task('copy', ['copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -41,10 +49,3 @@ gulp.task('browserSync', function() {
     },
   })
 })
-
-// Dev task with browserSync
-gulp.task('dev', ['browserSync'], function() {
-  // Reloads the browser whenever HTML or CSS files change
-  gulp.watch('css/*.css', browserSync.reload);
-  gulp.watch('*.html', browserSync.reload);
-});
