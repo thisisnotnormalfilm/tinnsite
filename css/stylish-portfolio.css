@@ -58,32 +58,40 @@ h5,h2{
   text-transform:uppercase;
   color:white;
   margin: 1rem auto 2rem;
-  font-size: 1.5rem;
   text-align: center;
 }
 
-h5 span,h2 span{
-  background-color: black;
-  padding: 0.25rem;
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 1.9rem;
+}
+h3{
+  font-size: 1.6rem
+}
+
+h4{
+  font-size: 1.4rem
+}
+
+h5{
+  font-size: 1.2rem;
 }
 
 
-.text-vertical-center h3, h1 {
+
+h3, h1 {
   color:white;
   font-family: 'Didot';
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 5rem;
   max-width: 1000px;
   margin: auto;
-  line-height: 1.75;
-
 }
 
-.text-vertical-center h3 span, h1 span{
-  background-color: black;
-  padding: 2rem;
-}
+
 
 #header .logo {
 
@@ -102,12 +110,12 @@ h5 span,h2 span{
   color: #fff;
   border: none;
   border-radius: 0;
-  font-family: 'Conduit', Arial,sans-serif;
+  font-family: 'Conduit', Arial, sans-serif;
   position: relative;
   display: inline-block;
   margin: 0;
   overflow: visible;
-  background: #000;
+  background: rgba(0, 33, 71,1);
   text-transform: uppercase;
   text-align-last: auto;
   text-decoration: none;
@@ -164,7 +172,7 @@ hr.small {
   -o-transition: all .4s ease 0s;
   transition: all .4s ease 0s;
   transform: translateX(250px);
-  background: #222;
+  background: #000;
 }
 
 .sidebar-nav {
@@ -178,7 +186,7 @@ hr.small {
 
 .sidebar-nav li {
   line-height: 40px;
-  text-indent: 20px;
+  text-indent: 0px;
 }
 
 .sidebar-nav li a {
@@ -271,61 +279,51 @@ hr.small {
 
 /* Callout */
 
-section, footer, header {
+section,  header {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-section>div, footer>div, header>div{
+section>div, header>div{
   display: inline-block;
-  padding: 6rem 0;
+  padding: 4rem 0 1rem;
   overflow: hidden;
-  width: 80%;
+  height: auto;
+  background-color: rgba(0, 33, 71, 0.85);
+  border-radius:   0.5rem 0 0.5rem 0;
   
 }
-
-.callout{
-
+section{
+  margin: 4rem 0 0rem;
 }
+
 #main{
-  height: 50vh;
-  margin-top: 50vh;
+  margin-top: 30vh;
 }
-footer{
-  height: 10rem;
-}
-
-
-/* Portfolio */
-
-
 
 /* Footer */
 
-footer {
-  padding: 100px 0;
-}
-
-#to-top {
-  font-size: 1em;
+#footer {
+  padding: 0.5rem 0 1rem;
   position: fixed;
-  right: 5px;
-  bottom: 5px;
-  display: none;
-  padding: 15px 20px;
+  bottom:0;
+  width: 100%;
+  background-color: white;
+  font-family: 'Didot';
+  color: rgba(0, 33, 71, 1);
+  display: flex;
+
+}
+
+#footer #email > div{
+  align-self: flex-start;
+}
+#mc_embed_signup #mce-EMAIL{
+  padding: 0.25rem 1rem;
+  box-sizing: border-box;
+  color: rgba(0, 33, 71, 1);
 }
 
 
-
-@media (max-width: 1000px){
-  .text-vertical-center h3, h1 {
-    font-size: 1.7rem;
-    max-width: 100%;
-    padding: 1rem;
-  }
-  section>div, footer>div, header>div{
-    width: 100%;
-    padding: 4rem 0;
-  }
