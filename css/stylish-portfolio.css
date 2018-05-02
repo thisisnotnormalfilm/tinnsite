@@ -32,10 +32,26 @@ html, body {
   min-height:100%; 
 }
 
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
 
 body {
   font-family: 'Conduit', 'Merriweather', 'Helvetica Neue', Helvetica, Arial, serif;
-  background: url(../img/TINN.jpg) no-repeat center center scroll;
+  background: black;
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 50%;
