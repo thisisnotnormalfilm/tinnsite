@@ -4,24 +4,22 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/blob/master/LICENSE)
  */
 
+@import url("//hello.myfonts.net/count/36876a");
+
+  
+@font-face {font-family: 'UniversNextPro-HeavyCond';src: url('/webfonts/36876A_0_0.eot');src: url('/webfonts/36876A_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/36876A_0_0.woff2') format('woff2'),url('/webfonts/36876A_0_0.woff') format('woff'),url('/webfonts/36876A_0_0.ttf') format('truetype');font-weight: bold;}
+ 
+  
+@font-face {font-family: 'SabonNextCom-Display';src: url('webfonts/36876A_1_0.eot');src: url('/webfonts/36876A_1_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/36876A_1_0.woff2') format('woff2'),url('/webfonts/36876A_1_0.woff') format('woff'),url('/webfonts/36876A_1_0.ttf') format('truetype');font-style: italic, oblique;}
+ 
+  
+@font-face {font-family: 'SabonNextCom-Display';src: url('/webfonts/36876A_2_0.eot');src: url('webfonts/36876A_2_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/36876A_2_0.woff2') format('woff2'),url('/webfonts/36876A_2_0.woff') format('woff'),url('/webfonts/36876A_2_0.ttf') format('truetype');}
+ 
+
+
+
 /* Global Styles */
-@import url('https://fonts.googleapis.com/css?family=GFS+Didot');
-@font-face {
-  font-family: 'Didot';
-  src:  url('didotlt-webfont.woff2') format('woff2'),
-        url('didotlt-webfont.woff') format('woff');
-  font-weight: 400;
-}
-@font-face {
- font-family:"Didot";
- src:url("DidotLT-Bold.woff2") format("woff2"),url("DidotLT-Bold.woff") format("woff");
- font-weight:700;
- font-style:normal
-}
-@font-face {
-  font-family: 'Conduit';
-  src:  url('ConduitITCStd-Medium.woff') format('woff');
-}
+
 @-ms-viewport{
   width: device-width;
 }
@@ -31,6 +29,23 @@ html, body {
   height: 100%;
   min-height:100%; 
 }
+
+.sans { 
+  font-family: UniversNextPro-HeavyCond;
+  font-weight: bold;
+  font-style: normal;
+}
+.serifit { 
+  font-family: SabonNextCom-Display;
+  font-weight: normal;
+  font-style: italic;
+}
+.serif { 
+  font-family: SabonNextCom-Display;
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 video#bgvid { 
     position: fixed;
@@ -45,23 +60,25 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
+    background: url(tinn.jpg) no-repeat;
     background-size: cover; 
 }
 
 body {
-  font-family: 'Conduit', 'Merriweather', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: SabonNextCom-Display; 'Helvetica Neue', Helvetica, Arial, serif;
   background: black;
   background-size: cover;
   background-attachment: fixed;
   background-position: 50% 50%;
   box-sizing: border-box;
-  color:white;
+  color:#fff;
   text-align: center;
   background-color: black;
 }
 
-
+a{
+  color: #BB133E;
+}
 @media (max-width: 900px){
   body {
     background-size: 100% auto;
@@ -69,20 +86,17 @@ body {
   }
   }
 
-h5,h2{
-  font-family: 'Conduit';
-  text-transform:uppercase;
-  color:white;
-  margin: 1rem auto 2rem;
-  text-align: center;
-}
-
 h1{
   font-size: 4rem;
+  font-family: 'UniversNextPro-HeavyCond';
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+
 }
 
 h2{
   font-size: 1.9rem;
+  font-family: 'SabonNextCom-Display';
 }
 h3{
   font-size: 1.6rem
@@ -94,17 +108,17 @@ h4{
 
 h5{
   font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: 'UniversNextPro-HeavyCond';
 }
 
 
 
 h3, h1 {
-  color:white;
-  font-family: 'Didot';
+
   font-weight: 700;
-  text-transform: uppercase;
-  max-width: 1000px;
-  margin: auto;
+  max-width: 1000px;margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -119,6 +133,9 @@ h3, h1 {
 
 }
 
+.subtitle{
+  margin-bottom:2rem;
+}
 /* Custom Button Styles */
 
 
@@ -126,7 +143,6 @@ h3, h1 {
   color: #fff;
   border: none;
   border-radius: 0;
-  font-family: 'Conduit', Arial, sans-serif;
   position: relative;
   display: inline-block;
   margin: 0;
@@ -141,9 +157,7 @@ h3, h1 {
   transition: .2s ease-out;
 
 }
-a{
-  color: #997b48;
-}
+
 
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
   color: #fff;
@@ -153,16 +167,19 @@ a{
 
 .btn-light {
   color: #333;
+  font-family: 'UniversNextPro-HeavyCond';
+  text-transform: uppercase;
   border: none;
-  border-radius: 0;
+  margin:0;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  border-radius: 0;border:none;
   background-color: rgb(255, 255, 255);
-  font-family: 'Conduit';
 }
 
 .btn-light:hover, .btn-light:focus, .btn-light:active {
   color: #333;
   background-color: rgba(255, 255, 255, .8);
-  font-family: 'Conduit';
 }
 
 
@@ -272,26 +289,6 @@ hr.small {
 }
 
 
-.mb3{
-  margin-bottom: 3rem;
-}
-/* About */
-
-.about {
-  padding: 50px 0;
-}
-
-
-/* Services */
-
-.services {
-  padding: 50px 0;
-}
-
-.service-item {
-  margin-bottom: 30px;
-}
-
 
 /* Callout */
 
@@ -307,8 +304,6 @@ section>div, header>div{
   padding: 4rem 0 1rem;
   overflow: hidden;
   height: auto;
-  background-color: rgba(0, 33, 71, 0.85);
-  border-radius:   0.5rem 0 0.5rem 0;
   
 }
 section{
@@ -316,30 +311,39 @@ section{
 }
 
 #main{
-  margin-top: 30vh;
+  margin-top: 15vh;
 }
 
 /* Footer */
 
 #footer {
-  padding: 0.5rem 0 1rem;
+  padding: 1rem 0 1rem;
   position: fixed;
   bottom:0;
   width: 100%;
-  background-color: white;
-  font-family: 'Didot';
-  color: rgba(0, 33, 71, 1);
+  background-color:#002147;
+  color: white;
   display: flex;
 
 }
 
 #footer #email > div{
-  align-self: flex-start;
+  float:left;
 }
-#mc_embed_signup #mce-EMAIL{
-  padding: 0.25rem 1rem;
+
+#mc-email{
+  padding: .5rem 1rem;
   box-sizing: border-box;
-  color: rgba(0, 33, 71, 1);
+  border: none;
+  margin: 0;
+  float: left;
+  font-size: 1.5rem;
+  font-family: 'UniversNextPro-HeavyCond';
+  text-transform: uppercase;
+  color: #002147;
+  min-width: 15rem;
+
+
 }
 
 
