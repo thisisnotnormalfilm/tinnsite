@@ -1,3 +1,5 @@
 img/36660872111488869691186.jpeg
 node_modules/*
 package-lock.json
+/TINN.sublime-project
+/TINN.sublime-workspace
