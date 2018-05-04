@@ -166,7 +166,7 @@ h3, h1 {
 }
 
 .btn-light {
-  color: #333;
+  color: white;
   font-family: 'UniversNextPro-HeavyCond';
   text-transform: uppercase;
   border: none;
@@ -174,7 +174,9 @@ h3, h1 {
   font-size: 1.4rem;
   line-height: 1.2;
   border-radius: 0;border:none;
-  background-color: rgb(255, 255, 255);
+  background-color: #BB133E;
+  float: left;
+  cursor: pointer;
 }
 
 .btn-light:hover, .btn-light:focus, .btn-light:active {
@@ -189,6 +191,9 @@ hr.small {
   max-width: 100px;
 }
 
+#social {
+  float: right;
+}
 
 /* Side Menu */
 
@@ -323,27 +328,35 @@ section{
   width: 100%;
   background-color:#002147;
   color: white;
-  display: flex;
-
 }
 
-#footer #email > div{
+#social {
+  width: 300px;
+  margin-top: 8px;
+}
+
+#footer h5 {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#email {
   float:left;
+  margin-left: 15px;
 }
 
-#mc-email{
+#mce-EMAIL {
   padding: .5rem 1rem;
   box-sizing: border-box;
   border: none;
   margin: 0;
   float: left;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: 'UniversNextPro-HeavyCond';
   text-transform: uppercase;
   color: #002147;
   min-width: 15rem;
-
-
 }
 
 
