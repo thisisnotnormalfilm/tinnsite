@@ -146,10 +146,12 @@
      
     </footer>
 
-    <video playsinline autoplay muted loop id="bgvid">
+    <div id="video"></div>
+
+    <!--<video playsinline autoplay muted loop id="bgvid">
         <source src="img/tinn_bg.webm" type="video/webm">
         <source src="img/tinn_bg.mp4" type="video/mp4">
-    </video>
+    </video>--> 
  
 
     <!-- Bootstrap core JavaScript -->
@@ -158,13 +160,16 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script type="text/javascript">
-        // $( document ).ready(function() {
-        //     $('#mc_form').ajaxChimp({
-        //         url: 'https://thisisnotnormalfilm.us17.list-manage.com/subscribe/post?u=8630e85ebb40259d8e571ac61&amp;id=ba37e18801'
-        //     });
-        // });
+        $( document ).ready(function() {
+            $('#video').YTPlayer({
+                fitToBackground: true,
+                videoId: '33uewqc8wrE'
+            });
+        });
 
     </script>
+
+    <script src="js/jquery.youtubebackground.js"></script>
 </body>
 
 </html>

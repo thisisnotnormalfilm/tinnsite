@@ -46,11 +46,33 @@ html, body {
   font-style: normal;
 }
 
+#video{
+ position: fixed;
+    top: 50%;
+    left: 45%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(tinn.jpg) no-repeat;
+    background-size: cover; 
+}
+
+.ytplayer-container{
+ position: absolute;
+ top: -40px;
+ z-index: -1;
+}
 
 video#bgvid { 
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 38%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
