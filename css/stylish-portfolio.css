@@ -351,11 +351,12 @@ section{
   border: none;
   margin: 0;
   float: left;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: 'UniversNextPro-HeavyCond';
   text-transform: uppercase;
   color: #002147;
-  min-width: 15rem;
+  min-width: 13rem;
+  line-height:1.65;
 }
 
 
