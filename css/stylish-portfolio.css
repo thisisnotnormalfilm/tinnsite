@@ -59,7 +59,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(tinn.jpg) no-repeat;
+    background: url(../img/TINN.jpg) no-repeat;
     background-size: cover; 
 }
 
@@ -79,9 +79,13 @@ a{
   color: #BB133E;
 }
 @media (max-width: 900px){
+  video#bgvid {
+    display: none;
+  }
   body {
     background-size: 100% auto;
-    background-position: 0 0;
+    background: url(../img/TINN.jpg) no-repeat center center fixed;
+    background-size: cover;
   }
   }
 
